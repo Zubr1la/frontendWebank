@@ -100,13 +100,14 @@ class Payment extends React.Component {
                         (<div className="text-center">
                             <h4>{this.state.message}</h4>
                             <h3>Apmaksa veikta!</h3>
-                            <button onClick={() => window.location='http://www.example.com/'+this.props.match.params.id+'/true'}>Atgriezties</button>
+                            <button onClick={() => window.location='https://tinylittlebookshop.xyz/check.php?order_ID='+this.props.match.params.id+'&isTrue=true'}>Atgriezties</button>
+
                         </div>):
                         (<div className="text-center">
 
                             <h4>{this.state.message}</h4>
                             <h3>Apmaksa nav veikta!</h3>
-                            <button onClick={() => window.location='http://www.example.com/'+this.props.match.params.id+'/false'}>Atgriezties</button>
+                            <button onClick={() => window.location='https://tinylittlebookshop.xyz/check.php?order_ID='+this.props.match.params.id+'&isTrue=false'}>Atgriezties</button>
                         </div>)))
             }
 
