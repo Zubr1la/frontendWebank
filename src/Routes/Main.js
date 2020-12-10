@@ -174,7 +174,7 @@ constructor(props) {
                                     show={this.state.addMoneyModal}
                                     onHide={addMoneyModal}
                                 />
-                                <Button variant="btn btn-light" size='lg' block onClick={()=>this.setState({addMoneyModal:true})}>Pievienot naudu</Button>
+                                <Button variant="btn btn-light" size='lg' block onClick={()=>this.setState({addMoneyModal:true})}>Paņemt mūžīgo kredītu</Button>
                             </div>
                             <div className="col-lg-6">
                                 <Transfer

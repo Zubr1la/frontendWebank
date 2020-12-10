@@ -34,6 +34,11 @@ class Addmoney extends React.Component {
             return 0
         }
 
+        if(this.state.balance>=500){
+            this.setState({message:"Kredīts par lielu!"});
+            return 0
+        }
+
         let balString = this.state.balance.toString();
 
         if(balString.split(".")[1]!==undefined){
@@ -69,7 +74,7 @@ class Addmoney extends React.Component {
 
                 <Modal.Header>
                     <Modal.Title id="contained-modal-title-vcenter">
-                       Papildini naudu
+                       Paņemt kredītu (uz neatdošanu)
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
